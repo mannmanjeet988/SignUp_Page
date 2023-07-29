@@ -3,7 +3,8 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const confirmPass = document.getElementById("confirmPassword");
 const continueBtn = document.getElementById("continue-btn");
-const msgTag = document.getElementById("msg");          
+const msgTag1 = document.getElementById("errmsg1"); 
+const msgTag2 = document.getElementById("errmsg2");          
 
 continueBtn.addEventListener("click" ,(event)=>{
     event.preventDefault();
@@ -14,7 +15,8 @@ continueBtn.addEventListener("click" ,(event)=>{
        confirmPassVal= confirmPass.value.trim();
        const token = generateAccessToken();
          if(nameVal ==='' || emailVal ==='' || passwordVal==='' || confirmPassVal===''){
-              msgTag.style.display="block";
+            // if any of the input field is empty, show error message
+              msgTag1.style.display="block";
          } 
          else{
             if(passwordVal===confirmPassVal){
@@ -31,7 +33,7 @@ continueBtn.addEventListener("click" ,(event)=>{
                 saveUserData(nameVal,emailVal,passwordVal,token);
             } 
             else{ 
-                    alert('password not matching');
+                alert("OOPs! Password not matching")
                     password.value = '';
                     confirmPassword.value = '';
                 }
@@ -70,7 +72,7 @@ function saveUserData(nameVal,emailVal,passwordVal,token){
     window.location.href="./SignIn";
 }
         
- 
+ // function to generate the access token
  function generateAccessToken() {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let accessToken = '';
@@ -81,7 +83,5 @@ function saveUserData(nameVal,emailVal,passwordVal,token){
     return accessToken;
   }
 
-  
-  //Call the function to generate the access token
 //   const accessToken = generateAccessToken();
 //   console.log(accessToken); 
