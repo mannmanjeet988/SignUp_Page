@@ -6,17 +6,16 @@ const message = document.getElementById ("success-msg");
 const logOutBtn = document.getElementById("logOut-Btn");
 
 let currentUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
-//let usersArr = JSON.parse(sessionStorage.getItem('usersArr'));
-
 fullName.innerText = currentUser.userName;
 emailId.innerText = currentUser.userEmail;
 password.innerText = currentUser.userPassword;
 token.innerText = currentUser.userToken;
 message.innerHTML = `Signup Successful!`;
 
+// adding event listener to logout button, clicking on logout button will redirect user to sign up page
 logOutBtn.addEventListener("click",(event)=>{
     //event.preventDefault();
-   // console.log(event.target);
-    window.location.href="../index.html";
+   // console.log(event.target); 
     localStorage.removeItem("usersArr");
+    window.location.href="../index.html";    
 })
