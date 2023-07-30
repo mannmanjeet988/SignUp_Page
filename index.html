@@ -5,36 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp_Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Mulish:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
-        <span>Welcome back! 👋</span>
-        <h1>Sign up to your account</h1>
-        <form id="form-container">
-           <div>
-                <label for="name">Your name</label><br>
-            <input type="text" id="name">
-           </div><br>
-           <div>
-                <label for="email">Your email</label><br>
-                <input type="email" id="email">
-           </div><br>
-           <div>
-            <label for="password">Password</label><br>
-            <input type="password" id="password">
-           </div><br>
-           <div>
-            <label for="confirmPassword">Confirm Password</label><br>
-            <input type="password" id="confirmPassword">
-           </div><br>
-           <button type="submit" id="continue-btn">Continue</button>
-        </form>
-        <br>
+    <div class="outer-container">
+        <div class="main-container">
+            <span id="welcome-msg">Welcome back! 👋</span>
+            <h1 id="heading">Sign up to your account</h1>
+            <form id="form-container">
+               <div>
+                    <label for="name">Your name</label><br>
+                <input type="text" id="name">
+               </div><br>
+               <div>
+                    <label for="email">Your email</label><br>
+                    <input type="email" id="email">
+               </div><br>
+               <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password">
+               </div><br>
+               <div>
+                <label for="confirmPassword">Confirm Password</label><br>
+                <input type="password" id="confirmPassword">
+               </div><br>
+               <button type="submit" id="continue-btn">Continue</button>
+            </form>
+            <br>
+            
+            <div class="messages">
+                <h2 id="errmsg1" style="display:none">Error: All fields are mandatory!</h2>
+            <h2 id="errmsg2" style="display:none">Error: OOPS! Password Not Matching</h2>
+            </div>
         
-        <h2 id="errmsg1" style="display:none">Error: All fields are mandatory!</h2>
-        <h2 id="errmsg2" style="display:none">Error: OOPS! Password Not Matching</h2>
-        <p>Don’t have an account? Sign up</p>
-
+        </div>
+        <div class="signUptag">
+            <a href="" >Don’t have an account? Sign up</a>
+        </div>
+        
     </div>
     
     <script src="./script.js"></script>

@@ -33,7 +33,7 @@ continueBtn.addEventListener("click" ,(event)=>{
                 saveUserData(nameVal,emailVal,passwordVal,token);
             } 
             else{ 
-                alert("OOPs! Password not matching")
+                alert("OOPS! Password not matching")
                     password.value = '';
                     confirmPassword.value = '';
                 }

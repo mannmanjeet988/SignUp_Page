@@ -2,11 +2,109 @@
     margin:0px;
     padding:0px;
     /* background-color: green; */
+    font-family: 'Mulish', sans-serif;
+    /* background-image: url(b); */
+    /* background-color: #DEDEDE; */
+    
+      /* background-color: #DEDEDE; */
 }
 
+.outer-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    /* top:100px; */
+    height:100vh;
+    background-image: url(./Background\ img\ 2.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: bottom;
+    width:100%;
+     /* background-color: #DEDEDE; */
+     row-gap: 15px;
+} 
+
 .main-container{
+    position:absolue;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    width:360px;
+    
+/* border:1px solid black; */
+height:450px;
+margin:auto;
+/* row-gap:15px; */
+background-color: white;
+}
+
+#welcome-msg{
+    align-self:flex-start ;
+  font-weight: 400;
+  padding-left: 48px;
+  font-size: 14px;
+}
+
+#heading{
+    align-self:center ;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#form-container{
+    align-self:center;
+    margin-top:10px;
+}
+
+input{
+    width:260px;
+    height:30px;
+    border : 1px solid #DEDEDE;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 500;
+    color:#333333;
+    line-height: 17px;
+}
+
+#continue-btn{
+    width:260px;
+    height:36px;
+    color:white;
+    background-color: #625BF7;
+    border-radius: 6px;
+    border:none;
+}
+
+.messages{
+    color: #625BF7;
+font-size: 12px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+/* text-align: center; */
+
+}
+
+.signUptag{
+    top: -90px;
+    position: relative;
+    font-weight: 700;
+}
+
+a{
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+/* margin-top:10px; */
+text-decoration: none;
 }

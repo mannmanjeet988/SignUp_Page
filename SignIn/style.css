@@ -2,6 +2,8 @@
     margin:0px;
     padding:0px;
     /* background-color: blueviolet; */
+    background: #F8FAFC;
+    font-family: 'Mulish', sans-serif;
     
 }
 
@@ -10,10 +12,48 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width:300px;
-border:1px solid black;
+width:360px;
+/* border:1px solid black; */
 height:450px;
-margin:auto;
+/* margin:auto; */
+row-gap:15px;
+/* top: 100px; */
+/* left: 418px */
+/* z-index:100; */
+position:relative;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#deatils{
+  display:flex;
+flex-direction: column;
+font-weight: 300;
+/* row-gap:10px !important; */
+}
+
+#success-msg{
+  font-size: 24px;
+  color: #625BF7;
+  line-height: 30px;
+}
+
+#img{
+  margin-bottom:15px;
+  margin-top:8px;
+}
+
+#logOut-Btn{
+  width:  240px;
+  height: 40px;
+  top: 500px;
+  /* left: 464px */
+  padding: 9px 14px 9px 14px;
+  border-radius: 6px;
+  gap: 10px;
+  background-color: #625BF7;
+  border:none;
+  font-weight: 700;
+  margin-top:20px;
 }
 
 #main-conatiner{
@@ -22,8 +62,11 @@ margin:auto;
    justify-content: center;
 align-items: center;
 height:auto;
-background-image: url(./Rectangle\ 1.png);
-background-repeat: no-repeat;
-  background-size: cover;
+background-image: url(./assets/Background\ img\ 2.svg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  bottom  ;
 height:100vh; 
+row-gap: 20px;
+
 }

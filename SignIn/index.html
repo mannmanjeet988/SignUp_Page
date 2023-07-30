@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Mulish:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="main-conatiner">
+    <div class="outer-container">
+      <div id="main-conatiner">
         <h1 id="success-msg"></h1>
 
         <div id="profile-container">
-            <div>
-            <h1>Profile</h1>
+            <div id="heading">
+              <h1>Profile</h1>
             </div>
             <div id="img">
-            <img src="./icon.png" />
+              <img src="./assets/icon.png" />
+            
             <!-- <img src=""> -->
-            </div>
-            <div>Full Name :<span id="fullName"></span></div>
-            <div>Email:<span id="email"></span></div>
-            <div>Token:<span id="token"></span></div>
-            <div>Password:<span id="password"></span></div>
+            </div id="details">
+              <div>Full Name : <span id="fullName"></span></div>
+              <div>Email : <span id="email"></span></div>
+              <div>Token : <span id="token"></span></div>
+              <div>Password : <span id="password"></span></div>
             <div>
               <button type="submit" id="logOut-Btn">Log Out</button>
           </div>
         </div>
         
     </div>
+    </div>
+   
     <script src="./script.js"></script>
 
   </body>
