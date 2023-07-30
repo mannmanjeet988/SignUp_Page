@@ -32,7 +32,7 @@ continueBtn.addEventListener("click", (event) => {
       } else {
       // if password and confirm password does not match, show alert to user
         if (passwordVal !== confirmPassVal) {
-          alert("OOPS! Password not matching");
+          window.alert("OOPS! Password not matching");
           password.value = "";
           confirmPassword.value = "";
         }
@@ -83,7 +83,9 @@ profileBtn.addEventListener("click", (event) => {
 function disableBack() {
   window.history.forward();
 }
-setTimeout("disableBack()", 0);
+//
+disableBack();
+//setTimeout("disableBack()", 0);
 window.onunload = function () {
   null;
 };
