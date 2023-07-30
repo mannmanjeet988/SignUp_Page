@@ -31,7 +31,7 @@ continueBtn.addEventListener("click", (event) => {
         saveUserData(nameVal, emailVal, passwordVal, token);
       } else {
       // if password and confirm password does not match, show alert to user
-        if (passwordVal === confirmPassVal) {
+        if (passwordVal !== confirmPassVal) {
           alert("OOPS! Password not matching");
           password.value = "";
           confirmPassword.value = "";
